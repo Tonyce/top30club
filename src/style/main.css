@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: arial, helvetica, verdana, tahoma, sans-serif;
+}
+
+body {
+  background-color: #f1f2f3;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+select {
+  border: 0;
+}
+
+button,
+input,
+textarea {
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+button {
+  font-family: arial, helvetica, verdana, tahoma, sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+@import './fonticon.less';
+@import './animation.less';
+@import './header/header.less';
+@import './footer.less';
+@import './main.less';
+@import './cell.less';
+@import './info.less';
+@import './articleinfo.less';
+

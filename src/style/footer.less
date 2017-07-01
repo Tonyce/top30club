@@ -1,0 +1,41 @@
+:root { 
+  --red: #124;
+}
+
+.footer {
+  // clear: both;
+  // min-height: 100px;
+  background-color: #333438;
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 50px;
+  color: gray;
+  position: relative;
+  font-size: 15px;
+
+  p.build {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+  }
+
+  svg.go-up {
+    &:hover {
+      cursor: pointer;
+    }
+    transform: rotate(-45deg);
+    padding: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    box-sizing: border-box;
+    fill: #00897b;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+    @media (max-width: 400px) {
+      width: 60px;
+    }
+  }
+}

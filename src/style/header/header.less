@@ -1,0 +1,45 @@
+:root {
+  --bg: #00897b;
+}
+
+header {
+  height: 60px;
+  font-size: 20px;
+  background: var(--bg);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+
+  .header-container {
+    width: 100%;
+    background: var(--bg);
+    max-width: 1440px;
+    margin: 0 auto;
+  
+    a {
+      height: 60px;
+      float: left;
+      padding: 15px;
+      padding-bottom: 12px;
+      box-sizing: border-box;
+      font-size: 20px;
+      line-height: 30px;
+      text-decoration: none;
+      color: white;
+      border-bottom: 5px solid none;
+      margin: 0 10px;
+    }
+
+    a.active {
+      border-bottom: 5px solid white;
+    }
+
+    a.icons-container {
+      padding: 10px;
+
+      i {
+        font-size: 40px;
+      }
+    }
+  }
+}

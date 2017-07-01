@@ -1,0 +1,37 @@
+:root { 
+  --red: #124;
+  --transY: 100px;
+}
+
+.swap-appear {
+  opacity: .01;
+  transform: translateY(var(--transY));
+  transition: opacity .3s ease-in, transform .3s ease-out;
+}
+
+.swap-appear.swap-appear-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.swap-enter {
+  opacity: .01;
+  transform: translateY(var(--transY));
+  transition: opacity .3s ease-in, transform .3s ease-out;
+}
+
+.swap-enter.swap-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.swap-leave {
+  opacity: 0;
+  transform: translateX(0);
+  transition: all .2s ease-in;
+}
+
+.swap-leave.swap-leave-active {
+  opacity: 0;
+  transform: translateY(var(--transY));
+}
